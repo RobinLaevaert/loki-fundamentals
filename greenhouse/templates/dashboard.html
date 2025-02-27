@@ -36,7 +36,7 @@
         <div id="plants-container">
             <!-- Render plants initially present in the database -->
             {% for plant in plants %}
-            <div class="plant-container" id="plant-{{ plant.id }}" style="background-color: white; padding: 10px; margin: 5px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <div class="plant-container" id="plant-{{ plant.id }}">
                 <strong>{{ plant.name }}</strong> - ID: {{ plant.id }}<br>
                 Plant Type: {{ plant.plant_type }}<br>
                 <img src="{{ url_for('static', filename='images/' + plant.plant_type + '.png') }}" alt="{{ plant.plant_type }}" style="width:100px;"><br>
