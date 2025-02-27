@@ -29,7 +29,7 @@ limits_config:
   metric_aggregation_enabled: true
   allow_structured_metadata: true
   volume_enabled: true
-  retention_period: 24h   # 28 days
+  retention_period: 24h   # 24h
 
 schema_config:
   configs:
@@ -49,7 +49,7 @@ pattern_ingester:
 ruler:
   enable_alertmanager_discovery: true
   enable_api: true
-  
+
 
 
 
