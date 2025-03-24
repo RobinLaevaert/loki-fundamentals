@@ -1,7 +1,7 @@
 version: '3'
 services:
   alloy:
-    image: grafana/alloy:latest
+    image: grafana/alloy:v1.7.5
     ports:
       - 12345:12345
       - 4317:4317
@@ -24,7 +24,7 @@ services:
     networks:
       - loki
   grafana:
-    image: grafana/grafana:main
+    image: grafana/grafana:11.5.2
     environment:
       - GF_FEATURE_TOGGLES_ENABLE=grafanaManagedRecordingRules
       - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
