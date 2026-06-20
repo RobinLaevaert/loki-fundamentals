@@ -31,7 +31,7 @@ services:
       - GF_AUTH_ANONYMOUS_ENABLED=true
       - GF_AUTH_BASIC_ENABLED=false
     ports:
-      - 3000:3000/tcp
+      - 3200:3000/tcp
     entrypoint:
        - sh
        - -euc
